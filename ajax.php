@@ -10,7 +10,15 @@
 	  echo json_encode($arr);
   }
 
+  if($funcion == "dos"){
+   $res = pg_query($conexion , "SELECT * FROM tabla");
+   $a = array();
+   while($row = pg_fetch_assoc($res)){
+    array_push($a,$row);
+   }
+   echo json_encode($a);
 
+  }
 
 
 ?>

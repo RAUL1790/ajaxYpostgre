@@ -8,7 +8,7 @@
 	 
   <div id="uno">funcion numero uno</div> 
 
-
+ <div id="dos">funcion numero dos</div> 
 
 </body>
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
