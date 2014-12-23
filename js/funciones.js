@@ -1,4 +1,22 @@
 $(document).on('ready',function(){
 
-alert('funciona');
+	$.ajax({
+		url: 'ajax.php',
+		type: 'post',
+		dataType: 'json',
+		data: {'funcion':'uno'},
+	}).done(function(data) {
+		//alert(JSON.stringify(data));
+		$('#uno').html(JSON.stringify(data));
+		console.log("success");
+
+	})
+	.fail(function() {
+		console.log("error");
+	})
+	.always(function(data) {
+		console.log("complete");
+	});
+   
+
 });
