@@ -24,7 +24,7 @@ $(document).on('ready',function(){
 		dataType: 'json',
 		data: {'funcion':'dos'},
 	}).done(function(data) {
-		alert(JSON.stringify(data[1].nombre));
+		//alert(JSON.stringify(data[1].nombre));
 		$('#dos').html(JSON.stringify(data));
 		console.log("success");
 
