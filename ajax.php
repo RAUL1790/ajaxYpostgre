@@ -1,5 +1,4 @@
 <?php 
-
  include ('conexion.php');
  $funcion = $_POST['funcion'];
  
